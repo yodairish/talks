@@ -1,0 +1,8 @@
+/**
+ * A bit description in - src/css/variables/colors.css
+ */
+@use cssnext;
+
+:root {
+  --height-header: 50px;
+}

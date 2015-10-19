@@ -1,0 +1,15 @@
+/**
+ * It's up to you what you will allocate into variables
+ * My personal recommendation:
+ * - create list of z-index's from 1 to 10 with step 100
+ * - define colors of your app, but use not personilized names, like
+ * main-color instead header-color
+ * - also I create list with mixins of fonts
+ */
+@use cssnext;
+
+:root {
+  --color-blank: #fff;
+  --color-dark: #212121;
+  --color-light-dark: #666;
+}

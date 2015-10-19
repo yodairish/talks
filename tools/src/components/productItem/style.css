@@ -1,0 +1,28 @@
+/**
+ * A bit description in - src/components/header/style.css
+ */
+@use cssnext;
+@use postcss-autoreset;
+@use postcss-initial(reset: "inherited");
+
+@import 'variables/colors.css';
+
+.item {
+  display: block;
+  width: 400px;
+  border: 1px solid var(--color-dark);
+  margin-bottom: 20px;
+}
+
+.img {
+  margin: auto;
+  display: block;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0;
+  border-top: 1px solid var(--color-dark);
+}

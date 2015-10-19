@@ -1,0 +1,77 @@
+{
+  "//": "If you will not publish your project to npm you can easy ignore",
+  "//": "most of the fields. There is only few you will actually use.",
+
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+  "//": "scripts - here you can define some scripts which you can later",
+  "//": "call with command: 'npm run taskName'",
+  "//": "It's good place if you send some parameters to script or",
+  "//": "if you don't wanna install globally some module, cause commands here",
+  "//": "will also look for the package into a local node_modules folder",
+  "//": "Some commands are predefined and you can call them",
+  "//": "just with 'npm name', like 'npm test' or 'npm start'",
+  "//": "You can pass arguments to the script by '--'",
+  "//": "like 'npm run build -- --watch'",
+  "//": "Also you can run several scripts in with one command:",
+  "//": "\"nameCommand\": \"node file1.js && node file2.js\"",
+  "//": "same as you can run them in parallel with operator '&'",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "build": "webpack --config=webpack.config.prod.js"
+  },
+  "author": "",
+  "license": "ISC",
+
+  "//": "Here is the list with all modules you use in project",
+  "//": "You can specify version of the package with semver",
+  "//": "https://github.com/npm/node-semver",
+
+  "dependencies": {
+    "autoprefixer": "^6.0.3",
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "bundle-loader": "^0.5.4",
+    "core-js": "^1.2.1",
+    "css-loader": "^0.19.0",
+    "cssgrace": "^2.0.2",
+    "cssnano": "^3.3.1",
+    "cssnext": "^1.8.4",
+    "es6-promise": "^3.0.2",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "img-loader": "^1.2.0",
+    "postcss-autoreset": "^1.0.1",
+    "postcss-import": "^7.0.0",
+    "postcss-initial": "^1.3.1",
+    "postcss-loader": "^0.6.0",
+    "postcss-plugin-context": "^2.0.0",
+    "postcss-use": "^2.0.0",
+    "style-loader": "^0.12.4",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2"
+  },
+
+  "//": "devDependencies - it's like dependencies, but this list will skip",
+  "//": "if you run with a flag 'npm install --production'",
+
+  "devDependencies": {
+    "del": "^2.0.2",
+    "doiuse": "^1.0.4",
+    "eslint": "^1.6.0",
+    "eslint-loader": "^1.1.0",
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1",
+    "jscs": "^2.3.0",
+    "jscs-loader": "^0.2.0",
+    "merge-stream": "^1.0.0",
+    "postcss-reporter": "^1.2.1",
+    "stylelint": "^1.2.1",
+    "webpack-dev-server": "^1.12.0"
+  }
+}
