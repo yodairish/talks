@@ -1,1 +1,0 @@
-@use cssnext;@use postcss-autoreset;@use postcss-initial(reset:"inherited");@import 'variables/colors.css';@import 'variables/indents.css';.header{position:fixed;top:0;left:0;right:0;height:var(--height-header);background-color:var(--color-dark);color:var(--color-blank);text-align:center;line-height:var(--height-header);font-size:calc(var(--height-header) / 2)}
